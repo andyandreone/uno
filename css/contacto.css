@@ -1,0 +1,188 @@
+@font-face {
+  font-family: fuente texto;
+  src: url(../font/rubik-medium.ttf); }
+@font-face {
+  font-family: fuente logo;
+  src: url(../font/ArchitectsDaughter.ttf); }
+/*gris oscuro*/
+/*gris clarito*/
+/*casi blanco*/
+/*rojo suave*/
+/*rojo oscuro*/
+body {
+  background: #EDF2F4; }
+
+.contenedor {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: white; }
+
+header .logo {
+  margin-left: 100px;
+  position: relative;
+  top: 15px; }
+  header .logo a {
+    text-decoration: none;
+    display: flex; }
+    header .logo a .logo1 {
+      color: #D90429;
+      font-family: fuente logo;
+      font-size: 30px;
+      margin: 0;
+      padding: 0 3px; }
+      header .logo a .logo1:hover {
+        color: #EF233C; }
+    header .logo a .logo2 {
+      color: #2B2D42;
+      font-family: fuente logo;
+      font-size: 30px;
+      margin: 0; }
+      header .logo a .logo2:hover {
+        color: black; }
+
+.menu {
+  text-align: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85032+0,bc2a09+48,bc2a09+48,f02f17+98,f02f17+98,f16f5c+100,e73827+100 */
+  background: #f85032;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #f85032 0%, #bc2a09 48%, #bc2a09 48%, #f02f17 98%, #f02f17 98%, #f16f5c 100%, #e73827 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #f85032 0%, #bc2a09 48%, #bc2a09 48%, #f02f17 98%, #f02f17 98%, #f16f5c 100%, #e73827 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #f85032 0%, #bc2a09 48%, #bc2a09 48%, #f02f17 98%, #f02f17 98%, #f16f5c 100%, #e73827 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+  .menu ul {
+    list-style: none; }
+    .menu ul .hombres-down {
+      position: relative;
+      padding: 10px 30px; }
+      .menu ul .hombres-down:hover {
+        background: #2B2D42;
+        color: #EDF2F4; }
+        .menu ul .hombres-down:hover .down {
+          width: 600px;
+          max-height: 300px;
+          border: 1px solid #2B2D42; }
+          .menu ul .hombres-down:hover .down li {
+            border-top: none;
+            padding: 5px 3px; }
+          .menu ul .hombres-down:hover .down .sinborde {
+            border-top: none; }
+      .menu ul .hombres-down .down {
+        width: 600px;
+        text-align: left;
+        overflow: hidden;
+        z-index: 2;
+        transition: max-height 0.5s;
+        max-height: 0;
+        width: 136px;
+        background: #2B2D42;
+        position: absolute;
+        padding: 0 7px;
+        margin-top: 9px;
+        margin-left: -33%;
+        color: #8D99AE;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC; }
+        .menu ul .hombres-down .down li:hover {
+          background: #EF233C;
+          border-radius: 10px;
+          color: #EDF2F4; }
+      .menu ul .hombres-down .ninos-down {
+        margin-left: -54%; }
+    .menu ul a {
+      font-family: fuente texto, calibri;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #2B2D42;
+      display: inline-block; }
+
+footer {
+  margin-top: 80px;
+  background: #D90429;
+  color: #EDF2F4;
+  font-family: Calibri;
+  display: flex;
+  justify-content: space-between; }
+  footer p {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 15px; }
+  footer ul {
+    display: flex;
+    padding-top: 13px;
+    list-style: none;
+    text-decoration: none; }
+    footer ul a {
+      text-decoration: none; }
+    footer ul li {
+      font-size: 14px;
+      padding: 0 13px;
+      color: #EDF2F4; }
+      footer ul li:hover {
+        color: #8D99AE; }
+  footer .redes {
+    height: 60px;
+    margin-right: 80px;
+    padding-top: 20px; }
+    footer .redes .circuloot {
+      background-size: contain;
+      background-image: url("../img/instagram.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 24%;
+      margin: 0 5px;
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      border: 3px solid rgba(231, 62, 183, 0.7);
+      background-color: rgba(255, 255, 255, 0.4); }
+      footer .redes .circuloot img {
+        max-width: 100%; }
+      footer .redes .circuloot:hover {
+        border: 3px solid rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.8); }
+    footer .redes .circuloml {
+      background-size: contain;
+      background-image: url("../img/ml.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 24%;
+      margin: 0 5px;
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      border: 3px solid rgba(233, 228, 67, 0.7);
+      background-color: rgba(255, 255, 255, 0.4);
+      text-align: center; }
+      footer .redes .circuloml img {
+        max-width: 84%;
+        position: relative;
+        top: 50px; }
+      footer .redes .circuloml:hover {
+        border: 3px solid rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.8); }
+    footer .redes .circuloface {
+      background-size: contain;
+      background-image: url("../img/face.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 24%;
+      margin: 0 5px;
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      border: 3px solid rgba(43, 78, 196, 0.7);
+      background-color: rgba(255, 255, 255, 0.4); }
+      footer .redes .circuloface img {
+        max-width: 100%; }
+      footer .redes .circuloface:hover {
+        border: 3px solid rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.8); }
+
+/*# sourceMappingURL=contacto.css.map */
